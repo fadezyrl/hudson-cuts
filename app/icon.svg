@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Hudson Cuts">
+  <rect width="32" height="32" fill="#101010"/>
+  <path
+    fill="#ca9f50"
+    d="M7 6h3.2v7.6h6.2V6H19.6v20H16.4v-8.4H10.2V26H7V6z"
+  />
+  <circle cx="23.5" cy="23.2" r="1.7" fill="#ca9f50"/>
+</svg>

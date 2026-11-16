@@ -5,8 +5,6 @@ import { PhotoSlot } from "@/components/ui/PhotoSlot/PhotoSlot";
 import { Reveal } from "@/components/ui/Reveal/Reveal";
 import { useLocale } from "@/context/LocaleContext";
 import { WORK_SLOTS } from "@/data/site";
-import "./work-section.desktop.css";
-import "./work-section.mobile.css";
 
 export const WorkSection = (): ReactElement => {
   const { dictionary } = useLocale();
@@ -21,11 +19,13 @@ export const WorkSection = (): ReactElement => {
         {dictionary.work.titleLine2} <em>{dictionary.work.titleEm}</em>
       </Reveal>
       <div className="wg">
-        {WORK_SLOTS.map((item) => (
+        {WORK_SLOTS.map((item, index) => (
           <PhotoSlot
             key={item.className}
             className={item.className}
             slot={slots[item.slotKey]}
+            src={item.src}
+            priority={index < 2}
           />
         ))}
         <Reveal as="p" className="cap">

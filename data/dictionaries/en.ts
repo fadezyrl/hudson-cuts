@@ -46,10 +46,9 @@ export type Dictionary = {
     intro: string;
     note: string;
     items: {
-      "01": { name: string; price: string };
-      "02": { name: string; price: string };
-      "03": { name: string; price: string };
-      "04": { name: string; price: string };
+      "01": { name: string; price: string; duration: string };
+      "02": { name: string; price: string; duration: string };
+      "03": { name: string; price: string; duration: string };
     };
   };
   inside: {
@@ -63,6 +62,45 @@ export type Dictionary = {
       "3": string;
       "4": string;
     };
+  };
+  testimonials: {
+    eyebrow: string;
+    titleLine1: string;
+    titleEm: string;
+    fromGoogle: string;
+    prevAria: string;
+    nextAria: string;
+    dotsAria: string;
+    goToAria: string;
+    items: {
+      fynn: {
+        name: string;
+        when: string;
+        quote: string;
+        source: "google" | "direct";
+      };
+      levi: {
+        name: string;
+        when: string;
+        quote: string;
+        source: "google" | "direct";
+      };
+      campbell: {
+        name: string;
+        when: string;
+        quote: string;
+        source: "google" | "direct";
+      };
+    };
+  };
+  location: {
+    eyebrow: string;
+    titleLine1: string;
+    titleEm: string;
+    body: string;
+    directions: string;
+    mapAria: string;
+    markerAria: string;
   };
   booking: {
     eyebrow: string;
@@ -117,11 +155,11 @@ export const en: Dictionary = {
     titleEm: "Finish.",
     caption: "Every head is a different brief.",
     slots: {
-      "1": "Transformation 01",
+      "1": "Transformation",
       "2": "Fade detail",
       "3": "Textured mullet",
       "4": "Back profile",
-      "5": "Before / after",
+      "5": "Finish",
     },
   },
   barber: {
@@ -136,12 +174,11 @@ export const en: Dictionary = {
     titleBefore: "The",
     titleEm: "menu.",
     intro: "One chair, one barber. Prices in NZD.",
-    note: "Replace with Hudson’s supplied price list — add or remove rows as needed.",
+    note: "All cuts include a consultation and finish.",
     items: {
-      "01": { name: "[Service name]", price: "$—" },
-      "02": { name: "[Service name]", price: "$—" },
-      "03": { name: "[Service name]", price: "$—" },
-      "04": { name: "[Service name]", price: "$—" },
+      "01": { name: "Standard Haircut", price: "$40", duration: "45 mins" },
+      "02": { name: "High schoolers cut", price: "$35", duration: "45 mins" },
+      "03": { name: "Short back and sides", price: "$30", duration: "45 mins" },
     },
   },
   inside: {
@@ -156,8 +193,49 @@ export const en: Dictionary = {
       "4": "Detail",
     },
   },
+  testimonials: {
+    eyebrow: "05 — Reviews",
+    titleLine1: "Client",
+    titleEm: "words.",
+    fromGoogle: "from Google",
+    prevAria: "Previous review",
+    nextAria: "Next review",
+    dotsAria: "Review slides",
+    goToAria: "Go to review",
+    items: {
+      fynn: {
+        name: "Fynn Clarke",
+        when: "2 weeks ago",
+        quote: "Fantastic men to get a trim from very respectful",
+        source: "google",
+      },
+      levi: {
+        name: "levi w",
+        when: "3 weeks ago",
+        quote:
+          "good vibes and always comes through with a fresh fade. Definitely recommend giving him a go",
+        source: "direct",
+      },
+      campbell: {
+        name: "Campbell Stewart",
+        when: "3 weeks ago",
+        quote:
+          "Greatest Haircut I’ve ever had, exceptional customer service. If you want a good haircut. Come here",
+        source: "google",
+      },
+    },
+  },
+  location: {
+    eyebrow: "06 — Find us",
+    titleLine1: "The",
+    titleEm: "chair.",
+    body: "One chair in Spreydon. Come through when you’re ready.",
+    directions: "Get directions",
+    mapAria: "Map showing Hudson Cuts location",
+    markerAria: "Hudson Cuts at 10 Domain Terrace",
+  },
   booking: {
-    eyebrow: "05 — Booking",
+    eyebrow: "07 — Booking",
     titleLine1: "Your chair",
     titleLine2: "is",
     titleEm: "waiting.",

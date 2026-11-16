@@ -4,6 +4,7 @@ import { LocaleProvider } from "@/context/LocaleContext";
 import { LocaleShell } from "@/components/layout/LocaleShell/LocaleShell";
 import { en } from "@/data/dictionaries/en";
 import "./globals.css";
+import "./hudson-cuts.css";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",

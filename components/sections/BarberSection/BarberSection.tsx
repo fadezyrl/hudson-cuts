@@ -4,8 +4,7 @@ import type { ReactElement } from "react";
 import { PhotoSlot } from "@/components/ui/PhotoSlot/PhotoSlot";
 import { Reveal } from "@/components/ui/Reveal/Reveal";
 import { useLocale } from "@/context/LocaleContext";
-import "./barber-section.desktop.css";
-import "./barber-section.mobile.css";
+import { IMAGES } from "@/data/images";
 
 export const BarberSection = (): ReactElement => {
   const { dictionary } = useLocale();
@@ -16,7 +15,11 @@ export const BarberSection = (): ReactElement => {
         H
       </div>
       <div className="bw">
-        <PhotoSlot slot={dictionary.barber.portraitSlot} />
+        <PhotoSlot
+          slot={dictionary.barber.portraitSlot}
+          src={IMAGES.barber}
+          priority
+        />
         <div>
           <div className="eyebrow">{dictionary.barber.eyebrow}</div>
           <Reveal as="h2" id="barber-heading">

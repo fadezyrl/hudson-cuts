@@ -28,11 +28,11 @@ export const ur: Dictionary = {
     titleEm: "فنش۔",
     caption: "ہر سر ایک الگ بریف ہے۔",
     slots: {
-      "1": "تبدیلی 01",
+      "1": "تبدیلی",
       "2": "فیڈ تفصیل",
       "3": "ٹیکسچرڈ ملٹ",
       "4": "پچھلا پروفائل",
-      "5": "پہلے / بعد",
+      "5": "فنش",
     },
   },
   barber: {
@@ -47,12 +47,11 @@ export const ur: Dictionary = {
     titleBefore: "مینو۔",
     titleEm: "",
     intro: "ایک کرسی، ایک باربر۔ قیمتیں NZD میں۔",
-    note: "ہڈسن کی فراہم کردہ قیمتوں کی فہرست سے تبدیل کریں — ضرورت کے مطابق قطاریں شامل یا ہٹائیں۔",
+    note: "ہر کٹ میں مشاورت اور فنش شامل ہے۔",
     items: {
-      "01": { name: "[خدمت کا نام]", price: "$—" },
-      "02": { name: "[خدمت کا نام]", price: "$—" },
-      "03": { name: "[خدمت کا نام]", price: "$—" },
-      "04": { name: "[خدمت کا نام]", price: "$—" },
+      "01": { name: "Standard Haircut", price: "$40", duration: "45 mins" },
+      "02": { name: "High schoolers cut", price: "$35", duration: "45 mins" },
+      "03": { name: "Short back and sides", price: "$30", duration: "45 mins" },
     },
   },
   inside: {
@@ -67,8 +66,49 @@ export const ur: Dictionary = {
       "4": "تفصیل",
     },
   },
+  testimonials: {
+    eyebrow: "05 — جائزے",
+    titleLine1: "کلائنٹ",
+    titleEm: "الفاظ۔",
+    fromGoogle: "گوگل سے",
+    prevAria: "پچھلا جائزہ",
+    nextAria: "اگلا جائزہ",
+    dotsAria: "جائزہ سلائیڈز",
+    goToAria: "جائزے پر جائیں",
+    items: {
+      fynn: {
+        name: "Fynn Clarke",
+        when: "2 ہفتے پہلے",
+        quote: "Fantastic men to get a trim from very respectful",
+        source: "google",
+      },
+      levi: {
+        name: "levi w",
+        when: "3 ہفتے پہلے",
+        quote:
+          "good vibes and always comes through with a fresh fade. Definitely recommend giving him a go",
+        source: "direct",
+      },
+      campbell: {
+        name: "Campbell Stewart",
+        when: "3 ہفتے پہلے",
+        quote:
+          "Greatest Haircut I’ve ever had, exceptional customer service. If you want a good haircut. Come here",
+        source: "google",
+      },
+    },
+  },
+  location: {
+    eyebrow: "06 — ہمیں تلاش کریں",
+    titleLine1: "کرسی۔",
+    titleEm: "",
+    body: "سپریڈن میں ایک کرسی۔ جب تیار ہوں، آ جائیں۔",
+    directions: "راستہ حاصل کریں",
+    mapAria: "ہڈسن کٹس کا مقام دکھانے والا نقشہ",
+    markerAria: "ہڈسن کٹس، 10 Domain Terrace",
+  },
   booking: {
-    eyebrow: "05 — بکنگ",
+    eyebrow: "07 — بکنگ",
     titleLine1: "آپ کی کرسی",
     titleLine2: "منتظر",
     titleEm: "ہے۔",

@@ -3,13 +3,11 @@
 import type { ReactElement } from "react";
 import { Reveal } from "@/components/ui/Reveal/Reveal";
 import { useLocale } from "@/context/LocaleContext";
-import { SERVICES } from "@/data/site";
-import "./services-section.desktop.css";
-import "./services-section.mobile.css";
 
 export const ServicesSection = (): ReactElement => {
   const { dictionary } = useLocale();
   const items = dictionary.services.items;
+  const rows = Object.entries(items);
 
   return (
     <section className="svc" id="services" aria-labelledby="services-heading">
@@ -24,16 +22,16 @@ export const ServicesSection = (): ReactElement => {
         <p>{dictionary.services.intro}</p>
       </header>
       <div className="rows">
-        {SERVICES.map((service) => {
-          const key = service.id as keyof typeof items;
-          return (
-            <Reveal key={service.id} className="row">
-              <span className="n">{service.id}</span>
-              <span className="t">{items[key].name}</span>
-              <span className="p">{items[key].price}</span>
-            </Reveal>
-          );
-        })}
+        {rows.map(([id, item]) => (
+          <Reveal key={id} className="row">
+            <span className="n">{id}</span>
+            <span className="t">
+              {item.name}
+              <span className="meta">{item.duration}</span>
+            </span>
+            <span className="p">{item.price}</span>
+          </Reveal>
+        ))}
       </div>
       <p className="note">{dictionary.services.note}</p>
     </section>

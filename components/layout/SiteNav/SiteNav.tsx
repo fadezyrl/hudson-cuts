@@ -4,12 +4,10 @@ import { useEffect, useState, type ReactElement } from "react";
 import { BrandMark } from "@/components/ui/BrandMark/BrandMark";
 import { useLocale } from "@/context/LocaleContext";
 import { NAV_LINKS } from "@/data/site";
-import { getBookingHref } from "@/lib/booking";
-import "./site-nav.desktop.css";
-import "./site-nav.mobile.css";
+import { BOOKING_LINK_PROPS } from "@/lib/booking";
 
 export const SiteNav = (): ReactElement => {
-  const { dictionary, locale, setLocale } = useLocale();
+  const { dictionary } = useLocale();
   const [solid, setSolid] = useState(false);
 
   useEffect(() => {
@@ -42,15 +40,7 @@ export const SiteNav = (): ReactElement => {
         ))}
       </ul>
       <div className="nav-actions">
-        <button
-          type="button"
-          className="locale-toggle"
-          aria-label={dictionary.locale.switchAria}
-          onClick={() => setLocale(locale === "EN" ? "UR" : "EN")}
-        >
-          {locale === "EN" ? dictionary.locale.ur : dictionary.locale.en}
-        </button>
-        <a className="nbook" href={getBookingHref()}>
+        <a className="nbook" {...BOOKING_LINK_PROPS}>
           {dictionary.nav.book}
         </a>
       </div>

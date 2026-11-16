@@ -1,11 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, type ReactElement } from "react";
 import { Reveal } from "@/components/ui/Reveal/Reveal";
 import { useLocale } from "@/context/LocaleContext";
-import { getBookingHref } from "@/lib/booking";
-import "./hero-section.desktop.css";
-import "./hero-section.mobile.css";
+import { IMAGES } from "@/data/images";
+import { BOOKING_LINK_PROPS } from "@/lib/booking";
 
 export const HeroSection = (): ReactElement => {
   const { dictionary } = useLocale();
@@ -34,22 +34,25 @@ export const HeroSection = (): ReactElement => {
 
   return (
     <header className="hero" id="top">
-      <div
-        className="bg"
-        id="herobg"
-        ref={bgRef}
-        data-label={dictionary.hero.bgLabel}
-        aria-hidden="true"
-      />
-      <div className="in">
-        <Reveal as="h1">
+      <div className="bg" id="herobg" ref={bgRef} aria-hidden="true">
+        <Image
+          src={IMAGES.studio}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="hero-img"
+        />
+      </div>
+      <div className="hero-copy">
+        <Reveal as="h1" eager>
           {dictionary.hero.titleLine1}
           <br />
           <em>{dictionary.hero.titleEm}</em>
         </Reveal>
-        <Reveal>
+        <Reveal eager>
           <p>{dictionary.hero.body}</p>
-          <a className="cta" href={getBookingHref()} data-booking>
+          <a className="cta" {...BOOKING_LINK_PROPS}>
             {dictionary.hero.cta}
           </a>
         </Reveal>

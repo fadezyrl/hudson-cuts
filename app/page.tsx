@@ -6,6 +6,8 @@ import { WorkSection } from "@/components/sections/WorkSection/WorkSection";
 import { BarberSection } from "@/components/sections/BarberSection/BarberSection";
 import { ServicesSection } from "@/components/sections/ServicesSection/ServicesSection";
 import { InsideSection } from "@/components/sections/InsideSection/InsideSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection/TestimonialsSection";
+import { LocationSection } from "@/components/sections/LocationSection/LocationSection";
 import { BookingSection } from "@/components/sections/BookingSection/BookingSection";
 
 const Home = (): ReactElement => {
@@ -18,6 +20,8 @@ const Home = (): ReactElement => {
         <BarberSection />
         <ServicesSection />
         <InsideSection />
+        <TestimonialsSection />
+        <LocationSection />
         <BookingSection />
       </main>
       <SiteFooter />

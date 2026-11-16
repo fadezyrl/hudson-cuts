@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import "./brand-mark.css";
 
 type BrandMarkProps = {
   href?: string;
