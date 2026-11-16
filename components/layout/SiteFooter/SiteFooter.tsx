@@ -37,6 +37,14 @@ export const SiteFooter = (): ReactElement => {
           >
             {dictionary.footer.instagram}
           </a>
+          <a
+            className="footer-handle"
+            href={SITE.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {SITE.instagramHandle}
+          </a>
         </div>
         <div>
           <h4>{dictionary.footer.contact}</h4>
@@ -52,6 +60,16 @@ export const SiteFooter = (): ReactElement => {
       </div>
       <div className="fine">
         <span>{dictionary.footer.copyright}</span>
+        <span className="fine-credit">
+          {dictionary.footer.developedBy}{" "}
+          <a
+            href={SITE.fadezyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {dictionary.footer.developedByName}
+          </a>
+        </span>
         <span>{SITE.locationShort}</span>
       </div>
     </footer>

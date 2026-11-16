@@ -1057,6 +1057,10 @@ footer {
   color: #f3efe6;
 }
 
+.footer-handle {
+  color: #ca9f50;
+}
+
 .fine {
   padding-top: 24px;
   font-size: 11px;
@@ -1064,8 +1068,20 @@ footer {
   color: #b8aa94;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.fine-credit a {
+  color: #f3efe6;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.fine-credit a:hover {
+  color: #ca9f50;
 }
 
 @media (min-width: 641px) {

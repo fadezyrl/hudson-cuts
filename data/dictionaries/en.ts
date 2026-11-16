@@ -119,6 +119,8 @@ export type Dictionary = {
     services: string;
     book: string;
     copyright: string;
+    developedBy: string;
+    developedByName: string;
   };
   locale: {
     en: string;
@@ -251,6 +253,8 @@ export const en: Dictionary = {
     services: "Services",
     book: "Book",
     copyright: "© 2026 Hudson Cuts",
+    developedBy: "Developed by",
+    developedByName: "Fadezy",
   },
   locale: {
     en: "EN",

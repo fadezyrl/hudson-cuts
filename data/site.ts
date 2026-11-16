@@ -20,6 +20,8 @@ export const SITE = {
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=10+Domain+Terrace,+Spreydon,+Christchurch+8024",
   year: 2026,
   instagramUrl: "https://www.instagram.com/hudson.cuts/",
+  instagramHandle: "@hudson.cuts",
+  fadezyUrl: "https://fadezyrl.com",
   bookingUrl: "https://hudsoncuts.setmore.com",
   email: "hudsoncuts07@gmail.com",
   phone: "+64 22 453 2504",

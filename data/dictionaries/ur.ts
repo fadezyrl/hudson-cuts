@@ -124,6 +124,8 @@ export const ur: Dictionary = {
     services: "خدمات",
     book: "بک کریں",
     copyright: "© 2026 ہڈسن کٹس",
+    developedBy: "Developed by",
+    developedByName: "Fadezy",
   },
   locale: {
     en: "EN",
