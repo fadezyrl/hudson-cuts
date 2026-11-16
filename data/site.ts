@@ -1,7 +1,5 @@
 export type ServiceItem = {
   id: string;
-  nameKey: string;
-  priceKey: string;
 };
 
 export const SITE = {
@@ -23,10 +21,10 @@ export const NAV_LINKS = [
 ] as const;
 
 export const SERVICES: ServiceItem[] = [
-  { id: "01", nameKey: "services.items.1.name", priceKey: "services.items.1.price" },
-  { id: "02", nameKey: "services.items.2.name", priceKey: "services.items.2.price" },
-  { id: "03", nameKey: "services.items.3.name", priceKey: "services.items.3.price" },
-  { id: "04", nameKey: "services.items.4.name", priceKey: "services.items.4.price" },
+  { id: "01" },
+  { id: "02" },
+  { id: "03" },
+  { id: "04" },
 ];
 
 export const WORK_SLOTS = [

@@ -1,4 +1,95 @@
-export const en = {
+export type Dictionary = {
+  meta: {
+    title: string;
+    description: string;
+  };
+  nav: {
+    work: string;
+    hudson: string;
+    services: string;
+    inside: string;
+    book: string;
+    brandAria: string;
+  };
+  hero: {
+    titleLine1: string;
+    titleEm: string;
+    body: string;
+    cta: string;
+    bgLabel: string;
+  };
+  work: {
+    eyebrow: string;
+    titleLine1: string;
+    titleLine2: string;
+    titleEm: string;
+    caption: string;
+    slots: {
+      "1": string;
+      "2": string;
+      "3": string;
+      "4": string;
+      "5": string;
+    };
+  };
+  barber: {
+    eyebrow: string;
+    title: string;
+    body: string;
+    signature: string;
+    portraitSlot: string;
+  };
+  services: {
+    eyebrow: string;
+    titleBefore: string;
+    titleEm: string;
+    intro: string;
+    note: string;
+    items: {
+      "01": { name: string; price: string };
+      "02": { name: string; price: string };
+      "03": { name: string; price: string };
+      "04": { name: string; price: string };
+    };
+  };
+  inside: {
+    eyebrow: string;
+    titleLine1: string;
+    titleLine2: string;
+    titleEm: string;
+    slots: {
+      "1": string;
+      "2": string;
+      "3": string;
+      "4": string;
+    };
+  };
+  booking: {
+    eyebrow: string;
+    titleLine1: string;
+    titleLine2: string;
+    titleEm: string;
+    body: string;
+    cta: string;
+  };
+  footer: {
+    follow: string;
+    contact: string;
+    explore: string;
+    instagram: string;
+    work: string;
+    services: string;
+    book: string;
+    copyright: string;
+  };
+  locale: {
+    en: string;
+    ur: string;
+    switchAria: string;
+  };
+};
+
+export const en: Dictionary = {
   meta: {
     title: "Hudson Cuts — Barber, Christchurch",
     description:
@@ -47,10 +138,10 @@ export const en = {
     intro: "One chair, one barber. Prices in NZD.",
     note: "Replace with Hudson’s supplied price list — add or remove rows as needed.",
     items: {
-      "1": { name: "[Service name]", price: "$—" },
-      "2": { name: "[Service name]", price: "$—" },
-      "3": { name: "[Service name]", price: "$—" },
-      "4": { name: "[Service name]", price: "$—" },
+      "01": { name: "[Service name]", price: "$—" },
+      "02": { name: "[Service name]", price: "$—" },
+      "03": { name: "[Service name]", price: "$—" },
+      "04": { name: "[Service name]", price: "$—" },
     },
   },
   inside: {
@@ -88,6 +179,4 @@ export const en = {
     ur: "UR",
     switchAria: "Switch language",
   },
-} as const;
-
-export type Dictionary = typeof en;
+};
