@@ -167,7 +167,7 @@ export const en: Dictionary = {
   barber: {
     eyebrow: "02 — The Barber",
     title: "Hudson.",
-    body: "[Short personal introduction from Hudson: how he started, years behind the chair, competition moments, what he loves about the craft. Keep it to three or four sentences.]",
+    body: "Hudson started cutting in 2022 and brings four years behind the chair. Every fade, mullet and finish is done with care from one seat in Christchurch.",
     signature: "— Hudson",
     portraitSlot: "Portrait of Hudson",
   },
