@@ -1,0 +1,42 @@
+@media (max-width: 640px) {
+  .book {
+    background: var(--gold);
+    color: var(--black);
+    padding: clamp(90px, 14vw, 160px) var(--pad);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .book h2 {
+    font: 400 clamp(56px, 14vw, 120px) / 0.82 var(--serif);
+    letter-spacing: -0.03em;
+  }
+
+  .book h2 em {
+    font-style: italic;
+  }
+
+  .book .r {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: clamp(36px, 6vw, 80px);
+  }
+
+  .book p {
+    max-width: 320px;
+  }
+
+  .cta.dk {
+    background: var(--black);
+    color: var(--ivory);
+  }
+
+  .cta.dk:hover {
+    background: var(--ivory);
+    color: var(--black);
+  }
+}

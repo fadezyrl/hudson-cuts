@@ -1,0 +1,58 @@
+@media (min-width: 641px) {
+  .inside {
+    background: var(--black);
+    padding: clamp(80px, 12vw, 180px) var(--pad);
+  }
+
+  .inside h2 {
+    font: 400 clamp(44px, 8vw, 128px) / 0.92 var(--serif);
+    letter-spacing: -0.02em;
+  }
+
+  .inside-em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .ig {
+    position: relative;
+    height: clamp(520px, 70vw, 900px);
+    margin-top: clamp(40px, 6vw, 80px);
+  }
+
+  .ig .ph {
+    position: absolute;
+  }
+
+  .ig .p1 {
+    left: 0;
+    top: 0;
+    width: 62%;
+    height: 70%;
+  }
+
+  .ig .p2 {
+    right: 0;
+    top: 14%;
+    width: 30%;
+    height: 46%;
+    z-index: 2;
+    outline: 10px solid var(--black);
+  }
+
+  .ig .p3 {
+    left: 24%;
+    bottom: 0;
+    width: 34%;
+    height: 44%;
+    z-index: 3;
+    outline: 10px solid var(--black);
+  }
+
+  .ig .p4 {
+    right: 4%;
+    bottom: 0;
+    width: 26%;
+    height: 30%;
+  }
+}

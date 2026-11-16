@@ -1,0 +1,49 @@
+@media (min-width: 641px) {
+  .barber {
+    background: var(--char);
+    padding: clamp(80px, 12vw, 180px) 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .barber .big {
+    position: absolute;
+    top: 2vw;
+    right: -2vw;
+    font: italic 400 clamp(140px, 30vw, 480px) / 0.8 var(--serif);
+    color: rgba(202, 159, 80, 0.08);
+    pointer-events: none;
+  }
+
+  .bw {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    gap: clamp(28px, 6vw, 100px);
+    padding: 0 var(--pad);
+    align-items: center;
+    position: relative;
+  }
+
+  .bw .ph {
+    aspect-ratio: 4 / 5;
+    margin-left: calc(var(--pad) * -1);
+  }
+
+  .barber h2 {
+    font: 400 clamp(44px, 8vw, 128px) / 0.92 var(--serif);
+    letter-spacing: -0.02em;
+    margin: 20px 0 28px;
+  }
+
+  .bw p {
+    max-width: 460px;
+    color: var(--taupe);
+    font-size: 17px;
+  }
+
+  .sig {
+    margin-top: 32px;
+    font: italic 400 34px var(--serif);
+    color: var(--gold);
+  }
+}

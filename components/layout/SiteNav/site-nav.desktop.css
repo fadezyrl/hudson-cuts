@@ -1,0 +1,85 @@
+@media (min-width: 641px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(22px + env(safe-area-inset-top, 0px)) var(--pad) 22px;
+    mix-blend-mode: normal;
+    transition: background 0.4s;
+  }
+
+  nav.solid {
+    background: rgba(16, 16, 16, 0.88);
+    backdrop-filter: blur(10px);
+  }
+
+  nav ul {
+    display: flex;
+    gap: 34px;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul a {
+    font: 400 11px/1 var(--sans);
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 6px;
+  }
+
+  nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background: var(--gold);
+    transition: width 0.4s;
+  }
+
+  nav ul a:hover::after {
+    width: 100%;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .nbook {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 11px 20px;
+    font: 500 11px/1 var(--sans);
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+
+  .nbook:hover {
+    background: var(--gold);
+    color: var(--black);
+  }
+
+  .locale-toggle {
+    background: transparent;
+    border: none;
+    color: var(--taupe);
+    font: 500 11px/1 var(--sans);
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+
+  .locale-toggle:hover {
+    color: var(--ivory);
+  }
+}

@@ -1,0 +1,47 @@
+.ph {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, #3a3731, #1b1a18);
+  background-size: cover;
+  background-position: center;
+}
+
+.ph::after {
+  content: attr(data-slot);
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  font: 400 10px/1 var(--sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(243, 239, 230, 0.45);
+}
+
+.ph > i {
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.ph:hover > i {
+  transform: scale(1.06);
+}
+
+.mask {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 1.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.mask.in {
+  clip-path: inset(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mask {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+    transition: none;
+  }
+}

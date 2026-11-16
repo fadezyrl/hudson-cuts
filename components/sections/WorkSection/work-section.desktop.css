@@ -1,0 +1,61 @@
+@media (min-width: 641px) {
+  .work {
+    background: var(--ivory);
+    color: var(--black);
+    padding: clamp(80px, 12vw, 180px) var(--pad);
+  }
+
+  .work h2 {
+    font: 400 clamp(44px, 8vw, 128px) / 0.92 var(--serif);
+    letter-spacing: -0.02em;
+  }
+
+  .work h2 em {
+    color: var(--gold);
+    font-style: italic;
+  }
+
+  .wg {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(12px, 2vw, 28px);
+    margin-top: clamp(40px, 6vw, 90px);
+    align-items: start;
+  }
+
+  .wg .a {
+    grid-column: 1 / 6;
+    aspect-ratio: 3 / 4;
+  }
+
+  .wg .b {
+    grid-column: 7 / 11;
+    aspect-ratio: 1;
+    margin-top: 18vw;
+  }
+
+  .wg .c {
+    grid-column: 3 / 8;
+    aspect-ratio: 4 / 5;
+    margin-top: -6vw;
+  }
+
+  .wg .d {
+    grid-column: 9 / 13;
+    aspect-ratio: 2 / 3;
+    margin-top: 4vw;
+  }
+
+  .wg .e {
+    grid-column: 1 / 5;
+    aspect-ratio: 1;
+    margin-top: -2vw;
+  }
+
+  .wg .cap {
+    grid-column: 6 / 12;
+    font: italic 400 clamp(22px, 2.6vw, 38px) / 1.2 var(--serif);
+    align-self: center;
+    margin-top: 6vw;
+  }
+}
